@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>my landing page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>BASHA and the Sibs - Pet Supplies and Grooming Salon</b></h1>
+  <p><b>NEW PET SALON IN QUEZON CITY
+    ROYALTY GROOM
+    NO STRESS APPROACH
+    WE TREAT YOUR PETS LIKE A PAWMILY</b></p>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="../dist/image/324561111_5490423057734167_6645443685958508788_n.jpg" style="width:100%">
+    <img src="../dist/image/basha.jpg" style="width:100%">
+    <img src="../dist/image/329330888_878385039940671_8549489878705383848_n.jpg" style="width:100%">
+   </div>
+
+  <div class="w3-third">
+    <img src="../dist/image/325617160_835328024217618_4196947979333637005_n.jpg" style="width:100%">
+    <img src="../dist/image/tanji.jpg" style="width:100%">
+    <img src="../dist/image/329354282_924460042303868_3191223476923723714_n.jpg" style="width:100%">
+   </div>
+
+  <div class="w3-third">
+    <img src="../dist/image/325684111_849302809443770_8696772454047660588_n.jpg" style="width:100%">
+    <img src="../dist/image/326052324_893112888775889_6415344760224918467_n.jpg" style="width:100%">
+    <img src="../dist/image/329616509_1885408675134902_8184971659422573631_n.jpg" style="width:100%">
+  </div>
+</div>
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
